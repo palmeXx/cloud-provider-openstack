@@ -32,7 +32,7 @@ spec:
             - name: ADDRESS
               value: /csi/csi.sock
             - name: DRIVER_REG_SOCK_PATH
-              value: /var/lib/kubelet/plugins/cinder.csi.openstack.org/csi.sock
+              value: /opt/rke/var/lib/kubelet/plugins/cinder.csi.openstack.org/csi.sock
             - name: KUBE_NODE_NAME
               valueFrom:
                 fieldRef:
