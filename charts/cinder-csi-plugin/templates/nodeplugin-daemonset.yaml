@@ -100,15 +100,15 @@ spec:
       volumes:
         - name: socket-dir
           hostPath:
-            path: /var/lib/kubelet/plugins/cinder.csi.openstack.org
+            path: /opt/rke/var/lib/kubelet/plugins/cinder.csi.openstack.org
             type: DirectoryOrCreate
         - name: registration-dir
           hostPath:
-            path: /var/lib/kubelet/plugins_registry/
+            path: /opt/rke/var/lib/kubelet/plugins_registry/
             type: Directory
         - name: kubelet-dir
           hostPath:
-            path: /var/lib/kubelet
+            path: /opt/rke/var/lib/kubelet
             type: Directory
         # - name: pods-cloud-data
         #   hostPath:
